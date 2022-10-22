@@ -1,39 +1,115 @@
+@charset "UTF-8"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+:root {
+    --cor1: #D3C3E8;
+    --cor2: #00bfffad;
+    --cor3: #0d819e8f;
+    --cor4: #344a528e;
+    --fonte-padrao: Arial, Verdana, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    
+
+}
 * {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 1em;
     color: black;
 
 }
-h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
+
+body {
+    background-color: var(--cor2);  /* rgba(15, 43, 27, 0.849); */
+}
+
+#navBar{
+    list-style: none;
+    display: flex;
+    
+}
+nav > a {
+    margin: 10px;
+    color: var(--cor0);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.40s;
+}
+
+nav > li {
+    padding: 5px;
+}
+#imgFav {
+    border-radius: 10px;
+    padding: 7px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+header, h2{
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 1.7em;
 }
 article{
     image-rendering: auto;
     image-orientation: 0deg;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-size: 1.2em;
 }
-h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+article > p {
+    text-align: center;
 }
+
+#imgPerfil {
+    text-align: center;
+}
+
 p{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
+    font-size: 0.9em;
 }
 li{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
 }
-body {
-    background-color: rgba(15, 43, 27, 0.849);
+
+#listaDeRedes{
+    margin: none;
+    padding: 0px 20px 10px 20px;
 }
+
+.redes {
+    margin: 20px;
+    border-radius: 29px;
+    background-color: var(--cor4);
+    box-shadow: 3px 3px 8px rgba(202, 202, 202, 0.301);;
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    
+}
+.redes > a{
+    text-decoration: none;
+}
+.redes:hover {
+    background-color: #00bfff9d;
+    text-decoration: underline;
+}
+
 
 
 main {
-    background-color: rgba(165, 172, 161, 0.801);
-    width: 475px;
+    background-color: var(--cor3); /* rgba(165, 172, 161, 0.801);  */
+    width: 595px;
+    height: auto;
     margin: auto;
-    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.37);
+    padding: 10px;
 }
